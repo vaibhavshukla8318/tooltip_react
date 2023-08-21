@@ -1,0 +1,41 @@
+/* Styling for the container that wraps the element and triggers the tooltip */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* Styling for the tooltip text */
+  .tooltip-text {
+    position: absolute;
+    top: 50%; /* Position the tooltip vertically centered */
+    left: calc(100% + 10px); /* Position the tooltip to the right of the element */
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Initially hidden */
+    width: 200px;
+    transition: opacity 0.2s, visibility 0.2s; /* Smooth transition for visibility */
+  }
+  
+  /* Styling for the arrow element in the tooltip */
+  .tooltip-arrow {
+    position: absolute;
+    top: 50%; /* Position the arrow vertically centered */
+    right: 100%; /* Position the arrow at the left edge of the tooltip */
+    transform: translateY(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent #333 transparent transparent;
+  }
+  
+  /* Show the tooltip when the container is hovered over */
+  .tooltip-container:hover .tooltip-text {
+    opacity: 1;
+    visibility: visible;
+  }
+  

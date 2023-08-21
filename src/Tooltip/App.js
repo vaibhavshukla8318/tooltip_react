@@ -25,7 +25,7 @@ const App = () => {
     // Main container with dynamic background based on 'backgroundColor' state
     <div className='app' style={{ backgroundImage: backgroundColor }}>
       {/* Use the 'Tooltip' component with a custom text */}
-      <Tooltip text={<span>Thanks for hovering!<br />I'm a tooltip. </span>}>
+      <Tooltip text={<span>Thanks for hovering!<br />I'm a tooltip.&#128591;&#128525; </span>}>
         {/* Div that triggers hover effect */}
         <div
           className='hovering'
